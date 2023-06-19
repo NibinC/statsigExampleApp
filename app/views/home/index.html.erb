@@ -1,0 +1,30 @@
+<% if @theme == 'Dark' %>
+  <div class="dark-mode-container">
+    <h1>Dark Mode Enabled</h1>
+    <p>Welcome to the Dark Mode!</p>
+  </div>
+<% else %>
+  <div>
+    <h1>Welcome to My App</h1>
+    <p>Please enable Dark Mode for an enhanced experience.</p>
+  </div>
+<% end %>
+
+<style>
+  .dark-mode-container {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    height: 100vh; /* Set the height to fill the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dark-mode-container h1,
+  .dark-mode-container p {
+    color: #fff;
+  }
+  
+</style>
